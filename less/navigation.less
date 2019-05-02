@@ -1,1 +1,19 @@
 // Navigation Styles here
+header {
+   display: flex;
+   align-items: baseline;
+   justify-content: space-between;
+   background-color: @white;
+
+   @media @mobile {
+    flex-direction: column;
+    align-items: center; 
+  }
+  a {
+       color: inherit;
+       font-size: @largeFontSize;
+       text-decoration: none;
+       padding: @largePadding;
+   }
+
+}
