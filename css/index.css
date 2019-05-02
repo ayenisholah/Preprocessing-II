@@ -1,3 +1,15 @@
+.btn {
+  padding: 2rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  background-color: teal;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #006667;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -208,6 +220,8 @@ header a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-top: 30px;
+  border-top: 2px dashed #C0C0C0;
 }
 @media (max-width: 500px) {
   .home .content-section {
@@ -260,6 +274,7 @@ header a {
   margin: 0 auto 30px;
 }
 .home .content-destination img {
+  width: 100%;
   border-radius: 10px;
 }
 .home .content-pick {
@@ -268,10 +283,19 @@ header a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+  }
+}
 .home .content-pick .destination {
+  padding: 2rem;
   width: 30%;
   margin-bottom: 30px;
 }
-.home hr {
-  border-top: 1px dotted;
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 75%;
+    margin: 0 auto;
+  }
 }
