@@ -178,6 +178,7 @@ header {
   header {
     flex-direction: column;
     align-items: center;
+    font-size: 150%;
   }
 }
 header a {
@@ -246,4 +247,7 @@ header a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home hr {
+  border-top: 1px dotted;
 }
