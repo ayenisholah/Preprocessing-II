@@ -5,17 +5,24 @@ header {
    justify-content: space-between;
    background-color: @white;
    border-bottom: 2px dashed @navigation-border;
+   padding-bottom: @largePadding;
+   padding-top: @largePadding;
 
-   @media @mobile {
-    flex-direction: column;
-    align-items: center;
-    font-size: @mobileFontSize
-  }
-  a {
-       color: inherit;
-       font-size: @largeFontSize;
-       text-decoration: none;
-       padding: @largePadding;
+   h1 {
+      @media @mobile{
+         text-align: center;
+      }
    }
 
+   @media @mobile {
+      flex-direction: column;
+      justify-content: center;
+   }
+
+      a {
+         color: inherit;
+         font-size: @smallFontSize;
+         text-decoration: none;
+         padding: @largePadding;
+         }
 }
